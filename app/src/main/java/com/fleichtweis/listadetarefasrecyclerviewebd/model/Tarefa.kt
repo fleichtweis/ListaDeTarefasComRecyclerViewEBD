@@ -1,7 +1,9 @@
 package com.fleichtweis.listadetarefasrecyclerviewebd.model
 
+import java.io.Serializable
+
 data class Tarefa(
     val idTarefa: Int,
-    val descricao: String,
+    var descricao: String,
     val dataCriacao: String
-)
+): Serializable
